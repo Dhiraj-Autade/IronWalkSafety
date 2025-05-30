@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/wimg2"
+    tools:context=".DestinationListActivity">
+
+    <!-- Search Bar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_view_destinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search destinations..."
+        android:layout_margin="10dp"
+        android:iconifiedByDefault="false"
+        android:backgroundTint="@android:color/transparent"
+        android:background="@drawable/searchview_bg"
+        android:textColor="@android:color/black"
+        app:queryBackground="@android:color/transparent"
+        app:iconTint="@android:color/white"
+        android:elevation="6dp"/>
+
+
+
+    <!-- RecyclerView for Destination List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_destinations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_weight="1"/>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btn_back_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:backgroundTint="@color/black"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"/>
+
+
+
+
+</LinearLayout>

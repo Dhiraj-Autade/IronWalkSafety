@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Destination5</string>
+    <string-array name="destinations">
+        <item>Raigad Fort</item>
+        <item>Konkan</item>
+        <item>Sahyadri</item>
+        <item>Mahabaleshwar</item>
+        <item>Lonavla</item>
+        <item>Mumbai</item>
+        <item>Ellora Caves</item>
+        <item>Vengurla</item>
+        <item>Lalbagh cha Raja</item>
+
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/whitem"
+    tools:context=".BookingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+
+        <!-- Date Picker Button -->
+        <Button
+            android:id="@+id/btn_pick_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:text="Pick Travel Date"
+            android:layout_marginTop="10dp" />
+
+        <!-- Selected Date Display -->
+        <TextView
+            android:id="@+id/tv_selected_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Date:"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <!-- Time Picker Button -->
+        <Button
+            android:id="@+id/btn_pick_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:text="Pick Travel Time"
+            android:layout_marginTop="10dp" />
+
+        <!-- Selected Time Display -->
+        <TextView
+            android:id="@+id/tv_selected_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Time:"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:padding="10dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_destinations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+        <!-- Gender Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Gender:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <!-- Enter Name -->
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Enter Age -->
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Age"
+            android:inputType="number"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp" />
+
+        <!-- Travel Preferences Chips -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Travel Preferences:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_preferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="false">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian Meal"
+                android:checkable="true" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Window Seat"
+                android:checkable="true" />
+        </com.google.android.material.chip.ChipGroup>
+
+        <!-- Destination Image -->
+        <ImageView
+            android:id="@+id/img_destination"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/wimg1"
+            android:contentDescription="Destination Image"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <!-- Rate Our Platform -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate Our Platform:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <RatingBar
+            android:id="@+id/rating_platform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_submit_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Booking"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

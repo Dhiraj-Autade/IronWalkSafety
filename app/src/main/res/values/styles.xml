@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.Menus7.Custom" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+
+        <!-- Dropdown/Popup menu styling -->
+        <item name="android:popupMenuStyle">@style/Widget.Menus7.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.Menus7.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Menus7.ListView.DropDown</item>
+    </style>
+
+    <!-- Theme for login, signup, and splash screen without action bar -->
+    <style name="Theme.Menus7.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+        
+        <!-- Explicitly disable action bar -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Dropdown/Popup menu styling -->
+        <item name="android:popupMenuStyle">@style/Widget.Menus7.PopupMenu</item>
+        <item name="popupMenuStyle">@style/Widget.Menus7.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Menus7.ListView.DropDown</item>
+    </style>
+
+    <!-- Full width dialog style -->
+    <style name="Theme.Menus7.FullWidthDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Custom popup menu style -->
+    <style name="Widget.Menus7.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:itemBackground">@android:color/white</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Menus7.ListView.DropDown</item>
+    </style>
+
+    <!-- Dropdown ListView style -->
+    <style name="Widget.Menus7.ListView.DropDown" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@android:color/darker_gray</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!-- Popup menu text appearance -->
+    <style name="TextAppearance.Menus7.PopupMenu" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- Custom spinner style -->
+    <style name="Widget.Menus7.Spinner" parent="Widget.AppCompat.Spinner.Underlined">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <!-- Popup menu style with black text -->
+    <style name="PopupMenuTextStyle" parent="@android:style/Widget.PopupMenu">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Black Alert Dialog style -->
+    <style name="BlackAlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:listDivider">@android:color/white</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/BlackAlertDialogButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/BlackAlertDialogButtonStyle</item>
+        <item name="android:buttonBarNeutralButtonStyle">@style/BlackAlertDialogButtonStyle</item>
+        <item name="android:listViewStyle">@style/BlackAlertDialogListViewStyle</item>
+    </style>
+
+    <!-- Black Alert Dialog Button Style -->
+    <style name="BlackAlertDialogButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!-- Black Alert Dialog ListView Style -->
+    <style name="BlackAlertDialogListViewStyle" parent="Widget.AppCompat.ListView.DropDown">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:divider">@android:color/white</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomSnackbarStyle" parent="Widget.MaterialComponents.Snackbar">
+        <item name="android:background">@drawable/snackbar_background</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <style name="CustomSnackbarTextStyle" parent="Widget.MaterialComponents.Snackbar.TextView">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AuthInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="AuthButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <style name="AuthTitle" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">48dp</item>
+        <item name="android:layout_marginBottom">32dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+</resources>

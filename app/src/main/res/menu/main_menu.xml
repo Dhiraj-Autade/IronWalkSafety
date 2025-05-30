@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share Location"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_more"
+        android:title="More"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="always">
+        
+        <menu>
+            <item
+                android:id="@+id/action_transport_options"
+                android:title="Transport Options"
+                android:icon="@android:drawable/ic_menu_directions"/>
+                
+            <item
+                android:id="@+id/action_faq"
+                android:title="FAQ"
+                android:icon="@android:drawable/ic_menu_help"/>
+                
+            <item
+                android:id="@+id/action_contact_support"
+                android:title="Contact Support"
+                android:icon="@android:drawable/ic_menu_call"/>
+                
+            <item
+                android:id="@+id/action_privacy_policy"
+                android:title="Privacy Policy"
+                android:icon="@android:drawable/ic_menu_info_details"/>
+                
+            <item
+                android:id="@+id/action_logout"
+                android:title="Logout"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_emergency_contacts"
+        android:title="Emergency Contacts"
+        android:icon="@android:drawable/ic_menu_call"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_safe_zones"
+        android:title="Safe Zones"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="ifRoom" />
+
+</menu>
